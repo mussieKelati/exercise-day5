@@ -49,3 +49,7 @@ def monthly_challenge(request, month):
          return HttpResponse(response_data)
      except:
          return HttpResponseNotFound("<h1>This month is not supported!</h1>")
+
+
+def example_view(request):
+    return render (request,"challenges/photo.html")

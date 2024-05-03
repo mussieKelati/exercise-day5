@@ -1,19 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
 
 <title>{% block my_title %} {{month_name|title}} challenges {% endblock %} </title>
 
 {% block my_body %}
   <h1>{{text}} </h1>
-  
-  {%if text is not None%}
-    
-  <h2>oh {{month_name}} is chechi lucky month</h2>
-
-
-    {%else%}
-        <h3>sorry,,no data for this month <h3>
-          
+  <img src = "{% static 'challenges/ch.jpg'%}" alt ='myimage' >
 
     {% endif %}
 
